@@ -1,21 +1,20 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
-    [SerializeField] private float maxSpeed = 8f;
-    [SerializeField] private float groundAcceleration = 80f;   // how fast you reach max speed on ground
-    [SerializeField] private float groundFriction = 60f;       // how fast you stop on ground
-    [SerializeField] private float airAcceleration = 40f;      // less control in air
-    [SerializeField] private float airFriction = 20f;          // less stopping in air
+    [SerializeField] private float maxSpeed = 10f;
+    [SerializeField] private float acceleration = 90f;
+    [SerializeField] private float deceleration = 70f;
+    [SerializeField] private float velPower = 0.96f;          // FIX 1: raised for snappier feel
 
     [Header("Jump")]
     [SerializeField] private float jumpForce = 16f;
-    [SerializeField] private float coyoteTime = 0.12f;         // grace period after walking off ledge
-    [SerializeField] private float jumpBufferTime = 0.15f;     // buffer jump press before landing
-    [SerializeField] private float jumpCutMultiplier = 0.5f;   // short hop on early release
-    [SerializeField] private float fallGravityMultiplier = 2.8f; // snappier fall
+    [SerializeField] private float coyoteTime = 0.12f;
+    [SerializeField] private float jumpBufferTime = 0.15f;
+    [SerializeField] private float jumpCutMultiplier = 0.4f;
+    [SerializeField] private float fallGravityMultiplier = 3.5f;
 
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheckPoint;
@@ -23,17 +22,27 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     private Rigidbody2D rb;
+    private Animator anim;
     private float defaultGravity;
-
     private bool isGrounded;
     private bool isJumping;
     private float coyoteTimer;
     private float jumpBufferTimer;
+    private Vector3 initialScale;
+
+    // FIX 2: track jump animation separately from physics jump state
+    private bool playingJumpAnim;
+    private float jumpAnimTimer;
+    [SerializeField] private float minJumpAnimDuration = 0.1f; // seconds before anim can end
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         defaultGravity = rb.gravityScale;
+        initialScale = transform.localScale;
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     private void Update()
@@ -43,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
         HandleJumpBuffer();
         HandleJumpCut();
         HandleGravity();
+        UpdateAnimations();
     }
 
     private void FixedUpdate()
@@ -50,21 +60,43 @@ public class PlayerMovement : MonoBehaviour
         HandleMovement();
     }
 
-    // ─── Ground ───────────────────────────────────────────────────────────────
+    // ─── Animation & Facing ───────────────────────────────────────────────────
+
+    private void UpdateAnimations()
+    {
+        float inputX = Input.GetAxisRaw("Horizontal");
+
+        // FIX 2: keep jump anim alive for at least minJumpAnimDuration
+        if (playingJumpAnim)
+        {
+            jumpAnimTimer -= Time.deltaTime;
+            if (jumpAnimTimer <= 0f && isGrounded)
+                playingJumpAnim = false;
+        }
+
+        anim.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetFloat("yVelocity", rb.linearVelocity.y);
+        anim.SetBool("isJumping", playingJumpAnim);   // use protected flag
+
+        if (inputX > 0.1f)
+            transform.localScale = new Vector3(
+                Mathf.Abs(initialScale.x), initialScale.y, initialScale.z);
+        else if (inputX < -0.1f)
+            transform.localScale = new Vector3(
+                -Mathf.Abs(initialScale.x), initialScale.y, initialScale.z);
+    }
+
+    // ─── Ground Check ─────────────────────────────────────────────────────────
 
     private void CheckGround()
     {
         if (groundCheckPoint != null)
-        {
             isGrounded = Physics2D.OverlapBox(
                 groundCheckPoint.position, groundCheckSize, 0f, groundLayer);
-        }
         else
-        {
-            // Fallback if no ground check point is assigned
             isGrounded = Physics2D.OverlapCircle(
                 transform.position + Vector3.down * 0.55f, 0.2f, groundLayer);
-        }
     }
 
     // ─── Coyote Time ──────────────────────────────────────────────────────────
@@ -74,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded)
         {
             coyoteTimer = coyoteTime;
-            isJumping = false;
+            isJumping = false;          // physics state only — anim uses playingJumpAnim
         }
         else
         {
@@ -86,89 +118,70 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleJumpBuffer()
     {
-        bool jumpPressed = Input.GetKeyDown(KeyCode.Space)
-                        || Input.GetButtonDown("Jump");
-
-        if (jumpPressed)
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump"))
             jumpBufferTimer = jumpBufferTime;
         else
             jumpBufferTimer -= Time.deltaTime;
 
         if (jumpBufferTimer > 0f && coyoteTimer > 0f)
+        {
+            jumpBufferTimer = 0f;
+            coyoteTimer = 0f;
             Jump();
+        }
     }
 
-    // ─── Jump Cut (short hop) ─────────────────────────────────────────────────
+    // ─── Jump Cut ─────────────────────────────────────────────────────────────
 
     private void HandleJumpCut()
     {
-        bool jumpReleased = Input.GetKeyUp(KeyCode.Space)
-                         || Input.GetButtonUp("Jump");
-
-        if (jumpReleased && isJumping && rb.linearVelocity.y > 0f)
+        if ((Input.GetKeyUp(KeyCode.Space) || Input.GetButtonUp("Jump"))
+            && isJumping && rb.linearVelocity.y > 0f)
         {
             rb.linearVelocity = new Vector2(
                 rb.linearVelocity.x,
-                rb.linearVelocity.y * jumpCutMultiplier
-            );
-            coyoteTimer = 0f;
+                rb.linearVelocity.y * jumpCutMultiplier);
         }
-    }
-
-    // ─── Variable Gravity ─────────────────────────────────────────────────────
-
-    private void HandleGravity()
-    {
-        // Fall faster than you rise — feels much more natural
-        if (!isGrounded && rb.linearVelocity.y < 0f)
-            rb.gravityScale = defaultGravity * fallGravityMultiplier;
-        else
-            rb.gravityScale = defaultGravity;
-    }
-
-    // ─── Horizontal Movement ──────────────────────────────────────────────────
-
-    private void HandleMovement()
-    {
-        float input = Input.GetAxisRaw("Horizontal"); // -1, 0, or 1
-
-        float accel = isGrounded ? groundAcceleration : airAcceleration;
-        float friction = isGrounded ? groundFriction : airFriction;
-
-        if (Mathf.Abs(input) > 0.01f)
-        {
-            // Accelerate toward target speed
-            float targetSpeed = input * maxSpeed;
-            float speedDiff = targetSpeed - rb.linearVelocity.x;
-            float force = speedDiff * accel;
-            rb.AddForce(new Vector2(force, 0f));
-        }
-        else
-        {
-            // No input — apply friction to slow down naturally
-            float frictionForce = Mathf.Min(Mathf.Abs(rb.linearVelocity.x), friction)
-                                  * -Mathf.Sign(rb.linearVelocity.x);
-            rb.AddForce(new Vector2(frictionForce, 0f));
-        }
-
-        // Clamp horizontal speed
-        rb.linearVelocity = new Vector2(
-            Mathf.Clamp(rb.linearVelocity.x, -maxSpeed, maxSpeed),
-            rb.linearVelocity.y
-        );
     }
 
     // ─── Jump ─────────────────────────────────────────────────────────────────
 
     private void Jump()
     {
-        // Reset Y velocity first so jump height is always consistent
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-
-        jumpBufferTimer = 0f;
-        coyoteTimer = 0f;
         isJumping = true;
+
+        // FIX 2: start protected animation window
+        playingJumpAnim = true;
+        jumpAnimTimer = minJumpAnimDuration;
+    }
+
+    // ─── Gravity ──────────────────────────────────────────────────────────────
+
+    private void HandleGravity()
+    {
+        if (!isGrounded && rb.linearVelocity.y < 0f)
+            rb.gravityScale = defaultGravity * fallGravityMultiplier;
+        else
+            rb.gravityScale = defaultGravity;
+    }
+
+    // ─── Movement ─────────────────────────────────────────────────────────────
+
+    private void HandleMovement()
+    {
+        float input = Input.GetAxisRaw("Horizontal");
+        float targetSpeed = input * maxSpeed;
+        float speedDiff = targetSpeed - rb.linearVelocity.x;
+        float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
+
+        // FIX 1: clamp the force so it can't overshoot at low speedDiff values
+        float movement = Mathf.Pow(Mathf.Abs(speedDiff) * accelRate, velPower)
+                         * Mathf.Sign(speedDiff);
+        movement = Mathf.Clamp(movement, -accelRate, accelRate);  // prevent overshooting
+
+        rb.AddForce(movement * Vector2.right);
     }
 
     // ─── Gizmos ───────────────────────────────────────────────────────────────

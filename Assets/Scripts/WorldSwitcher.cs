@@ -7,10 +7,12 @@ public class WorldSwitcher : MonoBehaviour
     public GameObject mirrorWorld;
 
     [Header("Switch Settings")]
-    public float switchCooldown = 0.5f;  // prevent rapid switching
+    public float switchCooldown = 0.0f;  // prevent rapid switching
 
     public bool isInRealWorld = true;
     private float lastSwitchTime = 0f;
+
+    public bool canSwitch = true;
 
     void Start()
     {
@@ -23,7 +25,10 @@ public class WorldSwitcher : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && CanSwitch())
         {
-            SwitchWorld();
+            if (canSwitch)
+            {
+                SwitchWorld();
+            }
         }
     }
 

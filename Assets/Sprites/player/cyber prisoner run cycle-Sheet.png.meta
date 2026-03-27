@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 175a603f0ebcbd443accc28229e82966
+guid: 18fec5f81ff797d4886fe41ad4f0d190
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1684304223175151964
-    second: climb_0
+      213: 3441679533585267901
+    second: cyber prisoner run cycle-Sheet_0
   - first:
-      213: -7106077621363497131
-    second: climb_1
+      213: -3324516865187595117
+    second: cyber prisoner run cycle-Sheet_1
   - first:
-      213: 8991690321404396714
-    second: climb_2
+      213: -4397009206359932113
+    second: cyber prisoner run cycle-Sheet_2
   - first:
-      213: 3380753689235674462
-    second: climb_3
+      213: -7779977891785818816
+    second: cyber prisoner run cycle-Sheet_3
   - first:
-      213: -6694415359266328066
-    second: climb_4
+      213: -8924359259500236476
+    second: cyber prisoner run cycle-Sheet_4
   - first:
-      213: 4270178884741702851
-    second: climb_5
+      213: 7875948479829194403
+    second: cyber prisoner run cycle-Sheet_5
+  - first:
+      213: 4716496660318445476
+    second: cyber prisoner run cycle-Sheet_6
+  - first:
+      213: -2522475920519325969
+    second: cyber prisoner run cycle-Sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,133 +121,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: climb_0
+      name: cyber prisoner run cycle-Sheet_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 1
-        width: 17
-        height: 57
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c519b0464c9df5710800000000000000
-      internalID: 1684304223175151964
+      spriteID: dbcf41e0d4d43cf20800000000000000
+      internalID: 3441679533585267901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climb_1
+      name: cyber prisoner run cycle-Sheet_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 1
-        width: 17
-        height: 51
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 557a6409d04226d90800000000000000
-      internalID: -7106077621363497131
+      spriteID: 39cb2b07681fcd1d0800000000000000
+      internalID: -3324516865187595117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climb_2
+      name: cyber prisoner run cycle-Sheet_2
       rect:
         serializedVersion: 2
-        x: 171
-        y: 7
-        width: 18
-        height: 42
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa480a115b6e8cc70800000000000000
-      internalID: 8991690321404396714
+      spriteID: f234bc45c6faaf2c0800000000000000
+      internalID: -4397009206359932113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climb_3
+      name: cyber prisoner run cycle-Sheet_3
       rect:
         serializedVersion: 2
-        x: 243
-        y: 1
-        width: 17
-        height: 57
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e55dbff7199daee20800000000000000
-      internalID: 3380753689235674462
+      spriteID: 04db6b7d357f70490800000000000000
+      internalID: -7779977891785818816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climb_4
+      name: cyber prisoner run cycle-Sheet_4
       rect:
         serializedVersion: 2
-        x: 314
-        y: 1
-        width: 17
-        height: 51
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef1f20403b8a813a0800000000000000
-      internalID: -6694415359266328066
+      spriteID: 4413589698e462480800000000000000
+      internalID: -8924359259500236476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climb_5
+      name: cyber prisoner run cycle-Sheet_5
       rect:
         serializedVersion: 2
-        x: 384
-        y: 7
-        width: 18
-        height: 42
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c427604219b24b30800000000000000
-      internalID: 4270178884741702851
+      spriteID: 3a63f71f96dfc4d60800000000000000
+      internalID: 7875948479829194403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyber prisoner run cycle-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4afd89639bc547140800000000000000
+      internalID: 4716496660318445476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyber prisoner run cycle-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe618f2d38d5efcd0800000000000000
+      internalID: -2522475920519325969
       vertices: []
       indices: 
       edges: []
@@ -250,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ec23388a93e7d734db87231ee313677a
     internalID: 0
     vertices: []
     indices: 
@@ -258,14 +308,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      climb_0: 1684304223175151964
-      climb_1: -7106077621363497131
-      climb_2: 8991690321404396714
-      climb_3: 3380753689235674462
-      climb_4: -6694415359266328066
-      climb_5: 4270178884741702851
+      cyber prisoner run cycle-Sheet_0: 3441679533585267901
+      cyber prisoner run cycle-Sheet_1: -3324516865187595117
+      cyber prisoner run cycle-Sheet_2: -4397009206359932113
+      cyber prisoner run cycle-Sheet_3: -7779977891785818816
+      cyber prisoner run cycle-Sheet_4: -8924359259500236476
+      cyber prisoner run cycle-Sheet_5: 7875948479829194403
+      cyber prisoner run cycle-Sheet_6: 4716496660318445476
+      cyber prisoner run cycle-Sheet_7: -2522475920519325969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

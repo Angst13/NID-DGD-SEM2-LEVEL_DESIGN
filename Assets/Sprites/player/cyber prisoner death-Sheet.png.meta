@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: bf4587732f59f8a48a401e9d23adef1b
+guid: 8ba0fa3524f82364a9daa42d74441aa8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4281637774074219296
-    second: jump_0
+      213: -669637962782753842
+    second: cyber prisoner death-Sheet_0
   - first:
-      213: -7862396843884538191
-    second: jump_1
+      213: 2405395452122096334
+    second: cyber prisoner death-Sheet_1
   - first:
-      213: 8276514422256456541
-    second: jump_2
+      213: -5892355873548608003
+    second: cyber prisoner death-Sheet_2
   - first:
-      213: -3697937850672776721
-    second: jump_3
+      213: -3957773850257412301
+    second: cyber prisoner death-Sheet_3
   - first:
-      213: 4987614716155920338
-    second: jump_4
+      213: -9193141022693237192
+    second: cyber prisoner death-Sheet_4
+  - first:
+      213: -1970693832661871606
+    second: cyber prisoner death-Sheet_5
+  - first:
+      213: 8963986805229103968
+    second: cyber prisoner death-Sheet_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,111 +118,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump_0
+      name: cyber prisoner death-Sheet_0
       rect:
         serializedVersion: 2
-        x: 27
+        x: 0
         y: 0
-        width: 22
-        height: 51
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02b8694dede6b6b30800000000000000
-      internalID: 4281637774074219296
+      spriteID: ecbb73c12d7f4b6f0800000000000000
+      internalID: -669637962782753842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_1
+      name: cyber prisoner death-Sheet_1
       rect:
         serializedVersion: 2
-        x: 92
-        y: 4
-        width: 36
-        height: 50
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b61c1d2ab723e290800000000000000
-      internalID: -7862396843884538191
+      spriteID: ec2e31c5b6ea16120800000000000000
+      internalID: 2405395452122096334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_2
+      name: cyber prisoner death-Sheet_2
       rect:
         serializedVersion: 2
-        x: 156
-        y: 16
-        width: 43
-        height: 37
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d535ef424061cd270800000000000000
-      internalID: 8276514422256456541
+      spriteID: dfdd2f25d852a3ea0800000000000000
+      internalID: -5892355873548608003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_3
+      name: cyber prisoner death-Sheet_3
       rect:
         serializedVersion: 2
-        x: 233
-        y: 16
-        width: 39
-        height: 34
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe97d290e194eacc0800000000000000
-      internalID: -3697937850672776721
+      spriteID: 33fa31207a92319c0800000000000000
+      internalID: -3957773850257412301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_4
+      name: cyber prisoner death-Sheet_4
       rect:
         serializedVersion: 2
-        x: 306
-        y: 10
-        width: 36
-        height: 42
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2dffbf8a821973540800000000000000
-      internalID: 4987614716155920338
+      spriteID: 83e5c4c72f66b6080800000000000000
+      internalID: -9193141022693237192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyber prisoner death-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04d22f7660b6a4e0800000000000000
+      internalID: -1970693832661871606
       vertices: []
       indices: 
       edges: []
@@ -225,7 +253,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 26163de189895864a8734d969b021aff
     internalID: 0
     vertices: []
     indices: 
@@ -233,13 +261,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      jump_0: 4281637774074219296
-      jump_1: -7862396843884538191
-      jump_2: 8276514422256456541
-      jump_3: -3697937850672776721
-      jump_4: 4987614716155920338
+      cyber prisoner death-Sheet_0: -669637962782753842
+      cyber prisoner death-Sheet_1: 2405395452122096334
+      cyber prisoner death-Sheet_2: -5892355873548608003
+      cyber prisoner death-Sheet_3: -3957773850257412301
+      cyber prisoner death-Sheet_4: -9193141022693237192
+      cyber prisoner death-Sheet_5: -1970693832661871606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

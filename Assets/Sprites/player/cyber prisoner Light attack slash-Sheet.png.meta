@@ -1,55 +1,43 @@
 fileFormatVersion: 2
-guid: 12b3e1afcc73491439fac12841731714
+guid: 06395f1304983d347ae6a56feab7dfc2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8296385383580801948
-    second: walk_0
+      213: 2187445091822196735
+    second: cyber prisoner Light attack slash-Sheet_0
   - first:
-      213: 3218353051568008401
-    second: walk_1
+      213: -385650457741426835
+    second: cyber prisoner Light attack slash-Sheet_1
   - first:
-      213: 6971375644381031630
-    second: walk_2
+      213: 9010887711111833914
+    second: cyber prisoner Light attack slash-Sheet_2
   - first:
-      213: -3714987382563562326
-    second: walk_3
+      213: 7854298553553543474
+    second: cyber prisoner Light attack slash-Sheet_3
   - first:
-      213: -2044624726750869082
-    second: walk_4
+      213: -999741601533838338
+    second: cyber prisoner Light attack slash-Sheet_4
   - first:
-      213: -1800561202758830752
-    second: walk_5
+      213: 2192520377070947814
+    second: cyber prisoner Light attack slash-Sheet_5
   - first:
-      213: -7072565547094396234
-    second: walk_6
+      213: -8280836202260933542
+    second: cyber prisoner Light attack slash-Sheet_6
   - first:
-      213: -6780060589664581786
-    second: walk_7
+      213: 321345140423048566
+    second: cyber prisoner Light attack slash-Sheet_7
   - first:
-      213: 2251703588619409307
-    second: walk_8
+      213: 7288753219786981897
+    second: cyber prisoner Light attack slash-Sheet_8
   - first:
-      213: -5224373444711448209
-    second: walk_9
+      213: 5686208070616502203
+    second: cyber prisoner Light attack slash-Sheet_9
   - first:
-      213: 8428286525173097495
-    second: walk_10
+      213: -9190830104113137556
+    second: cyber prisoner Light attack slash-Sheet_10
   - first:
-      213: -2787140197056013511
-    second: walk_11
-  - first:
-      213: -8260419473583676578
-    second: walk_12
-  - first:
-      213: 6000581766031926614
-    second: walk_13
-  - first:
-      213: -6959915571989194883
-    second: walk_14
-  - first:
-      213: 960921020097805623
-    second: walk_15
+      213: -4060030237086616460
+    second: cyber prisoner Light attack slash-Sheet_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,13 +133,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk_0
+      name: cyber prisoner Light attack slash-Sheet_0
       rect:
         serializedVersion: 2
-        x: 27
+        x: 0
         y: 0
-        width: 22
-        height: 50
+        width: 38
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4646ce323715ddc80800000000000000
-      internalID: -8296385383580801948
+      spriteID: ff7dbbfa8bd5b5e10800000000000000
+      internalID: 2187445091822196735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_1
+      name: cyber prisoner Light attack slash-Sheet_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 66
         y: 0
-        width: 21
-        height: 49
+        width: 62
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1dc61808c03e9ac20800000000000000
-      internalID: 3218353051568008401
+      spriteID: d6ffad2b3f4e5aaf0800000000000000
+      internalID: -385650457741426835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_2
+      name: cyber prisoner Light attack slash-Sheet_2
       rect:
         serializedVersion: 2
-        x: 168
+        x: 137
         y: 0
-        width: 18
-        height: 50
+        width: 42
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,262 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecc242f663d4fb060800000000000000
-      internalID: 6971375644381031630
+      spriteID: a39e0cba1aa1d0d70800000000000000
+      internalID: 9010887711111833914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_3
+      name: cyber prisoner Light attack slash-Sheet_3
       rect:
         serializedVersion: 2
-        x: 242
-        y: 0
-        width: 13
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aac9d3d88a6b17cc0800000000000000
-      internalID: -3714987382563562326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_4
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 0
-        width: 13
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a9c807d4a800a3e0800000000000000
-      internalID: -2044624726750869082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_5
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 13
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 065b539302f1307e0800000000000000
-      internalID: -1800561202758830752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_6
-      rect:
-        serializedVersion: 2
-        x: 455
-        y: 0
-        width: 14
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6b2b5c26b1339dd90800000000000000
-      internalID: -7072565547094396234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_7
-      rect:
-        serializedVersion: 2
-        x: 525
-        y: 0
-        width: 19
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 667ca65e0d268e1a0800000000000000
-      internalID: -6780060589664581786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_8
-      rect:
-        serializedVersion: 2
-        x: 596
-        y: 0
-        width: 21
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b97d12bdb78af3f10800000000000000
-      internalID: 2251703588619409307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_9
-      rect:
-        serializedVersion: 2
-        x: 664
-        y: 0
-        width: 21
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f618dfd280c4f77b0800000000000000
-      internalID: -5224373444711448209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_10
-      rect:
-        serializedVersion: 2
-        x: 736
-        y: 0
-        width: 18
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 714672e80f947f470800000000000000
-      internalID: 8428286525173097495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_11
-      rect:
-        serializedVersion: 2
-        x: 810
-        y: 0
-        width: 13
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93b9347f1c61259d0800000000000000
-      internalID: -2787140197056013511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_12
-      rect:
-        serializedVersion: 2
-        x: 881
-        y: 0
-        width: 13
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e53635d11481d5d80800000000000000
-      internalID: -8260419473583676578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_13
-      rect:
-        serializedVersion: 2
-        x: 951
-        y: 0
-        width: 15
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 655e402e259564350800000000000000
-      internalID: 6000581766031926614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_14
-      rect:
-        serializedVersion: 2
-        x: 1021
-        y: 0
+        x: 177
+        y: 1
         width: 16
-        height: 51
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d77dfd899a9696f90800000000000000
-      internalID: -6959915571989194883
+      spriteID: 2316c6cabe2100d60800000000000000
+      internalID: 7854298553553543474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_15
+      name: cyber prisoner Light attack slash-Sheet_4
       rect:
         serializedVersion: 2
-        x: 1091
+        x: 201
         y: 0
-        width: 21
-        height: 51
+        width: 49
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,8 +236,162 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73db22c9390e55d00800000000000000
-      internalID: 960921020097805623
+      spriteID: efb356d6f443022f0800000000000000
+      internalID: -999741601533838338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyber prisoner Light attack slash-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 0
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed8e1e9aa56d6e10800000000000000
+      internalID: 2192520377070947814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyber prisoner Light attack slash-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54da09095f841d80800000000000000
+      internalID: -8280836202260933542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyber prisoner Light attack slash-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67db631e3b5a57400800000000000000
+      internalID: 321345140423048566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyber prisoner Light attack slash-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 4
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90243e89f6ad62560800000000000000
+      internalID: 7288753219786981897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyber prisoner Light attack slash-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf4e080d1879ee40800000000000000
+      internalID: 5686208070616502203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyber prisoner Light attack slash-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68be5527bc937080800000000000000
+      internalID: -9190830104113137556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyber prisoner Light attack slash-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4747b15a200e7a7c0800000000000000
+      internalID: -4060030237086616460
       vertices: []
       indices: 
       edges: []
@@ -510,22 +410,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walk_0: -8296385383580801948
-      walk_1: 3218353051568008401
-      walk_10: 8428286525173097495
-      walk_11: -2787140197056013511
-      walk_12: -8260419473583676578
-      walk_13: 6000581766031926614
-      walk_14: -6959915571989194883
-      walk_15: 960921020097805623
-      walk_2: 6971375644381031630
-      walk_3: -3714987382563562326
-      walk_4: -2044624726750869082
-      walk_5: -1800561202758830752
-      walk_6: -7072565547094396234
-      walk_7: -6780060589664581786
-      walk_8: 2251703588619409307
-      walk_9: -5224373444711448209
+      cyber prisoner Light attack slash-Sheet_0: 2187445091822196735
+      cyber prisoner Light attack slash-Sheet_1: -385650457741426835
+      cyber prisoner Light attack slash-Sheet_10: -9190830104113137556
+      cyber prisoner Light attack slash-Sheet_11: -4060030237086616460
+      cyber prisoner Light attack slash-Sheet_2: 9010887711111833914
+      cyber prisoner Light attack slash-Sheet_3: 7854298553553543474
+      cyber prisoner Light attack slash-Sheet_4: -999741601533838338
+      cyber prisoner Light attack slash-Sheet_5: 2192520377070947814
+      cyber prisoner Light attack slash-Sheet_6: -8280836202260933542
+      cyber prisoner Light attack slash-Sheet_7: 321345140423048566
+      cyber prisoner Light attack slash-Sheet_8: 7288753219786981897
+      cyber prisoner Light attack slash-Sheet_9: 5686208070616502203
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
