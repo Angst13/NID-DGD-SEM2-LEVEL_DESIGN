@@ -789,7 +789,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHits: 3
   invincibleTime: 1.5
-  deathAnimationDuration: 0.39
 --- !u!114 &234011942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,7 +805,7 @@ MonoBehaviour:
   acceleration: 60
   deceleration: 60
   velPower: 0.9
-  jumpForce: 17.8
+  jumpForce: 17.5
   coyoteTime: 0.12
   jumpBufferTime: 0.15
   jumpCutMultiplier: 1
@@ -6017,7 +6016,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHits: 3
   invincibleTime: 1.5
-  deathAnimationDuration: 1.5
 --- !u!114 &950395312
 MonoBehaviour:
   m_ObjectHideFlags: 0

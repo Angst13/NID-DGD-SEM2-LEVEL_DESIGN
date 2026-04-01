@@ -9,6 +9,7 @@ TagManager:
   - NoSwitchZone
   - Boss
   - Wall
+  - RespawnPoint
   layers:
   - Default
   - TransparentFX
